@@ -10,4 +10,4 @@ function Mole(props) {
 	)
 }
 
-export default Mole
+export default Mole;

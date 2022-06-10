@@ -1,18 +1,23 @@
 // Container for moles
 // Handles clicks 
 // Either displays the Mole component or the EmptySlot component
-import React from "react";
+import React, { useState } from "react";
 import Mole from "./Mole";
 import EmptySlot from "./EmptySlot";
 
 function MoleContainer(props) {
+	let [displayMole, setDisplayMole] = useState(false)
+
+	const whackMole = () => {
+		props.setScore(props.score + 1)
+		setDisplayMole(false)
+	}
+
 	return (
 		<div className="moleContainer">
-			<h2>Mole container</h2>
-			<Mole />
-			<EmptySlot />
+			{ displayMole ? <Mole /> : <EmptySlot /> }
 		</div>
 	)
 }
 
-export default MoleContainer
+export default MoleContainer;
