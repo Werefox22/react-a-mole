@@ -15,7 +15,7 @@ function MoleContainer(props) {
 
 	return (
 		<div className="moleContainer">
-			{ displayMole ? <Mole /> : <EmptySlot /> }
+			{ displayMole ? <Mole setDisplayMole={setDisplayMole} /> : <EmptySlot setDisplayMole={setDisplayMole} /> }
 		</div>
 	)
 }
