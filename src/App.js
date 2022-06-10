@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import MoleContainer from './MoleContainer';
 
 function App() {
-  // function to generate mole containers
+  // Function to generate mole containers
 
   return (
     <div className="App">
-      
+      <MoleContainer />
     </div>
   );
 }
