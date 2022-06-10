@@ -1,4 +1,33 @@
+.App {
+  width: 90vw;
+  margin: auto;
+}
+
+.hills {
+  width: 90%;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30% 30%;
+
+  grid-template-areas: 
+    "hill hill hill"
+    "hill hill hill"
+    "hill hill hill";
+}
+
 .moleContainer {
   border: 1px solid black;
   padding: 0.5em;
+  margin: 5px;
+
+  grid-area: "hill";
+}
+
+img {
+  width: 100%;
+  margin: auto;
+
 }
