@@ -1,16 +1,25 @@
+* {
+  background-color: black;
+  color: white;
+}
+
 .App {
   width: 90vw;
   margin: auto;
+  
+  max-height: 90vh;
+  text-align: center;
 }
 
 .hills {
-  width: 90%;
+  height: 50vh;
   margin: auto;
 
   display: grid;
+  justify-content: center;
 
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 30% 30% 30%;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
 
   grid-template-areas: 
     "hill hill hill"
@@ -21,13 +30,13 @@
 .moleContainer {
   border: 1px solid black;
   padding: 0.5em;
-  margin: 5px;
+
+  margin: auto;
 
   grid-area: "hill";
 }
 
-img {
+.mole {
   width: 100%;
   margin: auto;
-
 }

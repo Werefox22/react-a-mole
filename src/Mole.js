@@ -7,7 +7,7 @@ function Mole(props) {
 	useEffect(() => {
 		// generate a random number between 5 and 10 seconds
 		let timeUntilGone = (Math.random() * 5000) + 5000;
-		
+
 		let timer = setTimeout(() => {
 			props.setDisplayMole(false)
 		}, timeUntilGone)
@@ -20,6 +20,7 @@ function Mole(props) {
 			<img 
 				src={MoleImage}
 				onClick={props.handleClick}
+				draggable="false"
 			/>
 		</div>
 	)

@@ -7,7 +7,7 @@ function EmptySlot(props) {
 	useEffect(() => {
 		// generate a random number between 5 and 20 seconds
 		let timeUntilMole = (Math.random() * 15000) + 5000;
-		
+
 		let timer = setTimeout(() => {
 			props.setDisplayMole(true)
 		}, timeUntilMole)
@@ -19,6 +19,7 @@ function EmptySlot(props) {
 		<div className="emptySlot">
 			<img
 				src={hillImage}
+				draggable="false"
 			/>
 		</div>
 	)
